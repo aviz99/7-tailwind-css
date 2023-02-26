@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    spacing: {
+                        '13': '3.25rem',
+                        '15': '3.75rem',
+                        '128': '32rem',
+                        '144': '36rem',
+                    },
+                    fontFamily: {
+                        'inter':['Inter']
+                    },
+                    colors: {
+                        'mycolor': '#bada55',
+                        'ngopi': '#c0ffee',
+                    }
+                },
+            },
+        };
+    </script>
+    <title>Utility Basic 2 Background, Rounding, Border, Shadow, Filters & Effects</title>
+    <style type="text/tailwindcss">
+        
+    </style>
+</head>
+<body>
+    <h1 class="text-8xl font-bold text-center my-10">Hello <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">World</span></h1>
+
+    <section class="mb-10 bg-gradient-to-r from-indigo-200 via-red-500 to-yellow-400">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-13 ">Margin</div>
+        <div class="py-8 ">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+        <h2 class="bg-blue-500 text-center text-3xl">Sizing</h2>
+        <div class="w-32 h-32 bg-ngopi">Kotak 1</div>
+    </section>
+
+    <section class="font-inter max-w-3xl mx-auto">
+        <h2 class="mb-4 text-4xl font-bold">Belajar Mengenai Typography Pada TailwindCSS</h2>
+        <div class="mb-4 text-lg text-gray-500">By <a href="#" class="text-gray-700 font-semibold">Ali Havizni,</a> 29 Desember 2022</div>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, totam. Numquam, enim ratione neque possimus accusantium tempore alias fuga provident consectetur sed quae veritatis fugit tempora dolor iusto cum incidunt illum assumenda ducimus doloribus dicta vitae? Ullam exercitationem deleniti, doloribus autem fugit eveniet. Ducimus consequuntur, libero quas excepturi doloribus ex?</p>
+
+        <blockquote class="mb-4 italic font-thin text-xl">"Lorem ipsum dolor sit amet <a href="" class="underline font-semibold text-blue-600">consectetur</a> adipisicing elit. Rem quae consequatur sequi, quaerat sint iure dolore consequuntur magnam. Deleniti, quod."</blockquote>
+
+        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo neque possimus natus perferendis repellendus autem. Provident itaque saepe recusandae, suscipit eum, molestiae dolorum, nihil perferendis nesciunt vitae pariatur praesentium quaerat.</p>
+    </section>
+
+    <div class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed" style="background-image: url(https://source.unsplash.com/1000x600?computer);">
+        <p class="p-5 text-2xl">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam cum, nulla ducimus, quis consectetur iusto quas nostrum sequi ratione quo et. Aliquid accusantium libero delectus nemo ad possimus unde cumque totam veritatis voluptatem, quo ullam distinctio similique natus? Nihil laboriosam eaque, sit ea quasi voluptas illo quod, tempora dolorem sed, saepe adipisci modi quaerat. Unde distinctio, nesciunt non molestiae rerum asperiores mollitia magnam perferendis. Doloribus esse maxime beatae tempore atque amet quo veritatis ducimus exercitationem quas perferendis eum sunt reprehenderit, voluptates corporis aliquam incidunt illo perspiciatis. Nostrum minima ab repudiandae quos! Praesentium soluta, vitae nostrum, ut dolorem sed dicta porro illum quam nulla non ullam esse distinctio veritatis? Ut ab animi tempore facilis fuga quasi dolorem suscipit sed numquam nulla alias ipsa aliquid sint rem perspiciatis distinctio eum qui iusto, est assumenda? Non, doloribus sed! Fugit, perferendis! Voluptas ab inventore alias quaerat numquam aliquam aspernatur. Laudantium, recusandae culpa? Saepe, sapiente architecto facilis vero eum aliquam modi consequatur cum cupiditate error ratione libero? Soluta, neque! Optio, debitis nostrum ea dolorem at, exercitationem harum doloremque nisi tempore dolorum aspernatur consequuntur cum sequi animi rem quod. Reiciendis non porro delectus aliquid doloribus totam iste consequatur doloremque tempore. Quo debitis veritatis sit asperiores repudiandae?
+        </p>
+    </div>
+
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-cover bg-no-repeat rounded-2xl shadow-2xl shadow-slate-500 overflow-hidden border-8 flex" style="background-image: url(img/1.jfif);">
+        <div class="w-[200px] h-[200px] bg-white/30 m-auto backdrop-blur-md rounded-full"></div>
+    </div>
+
+    <div class="mb-96"></div>
+</body>
+</html>
